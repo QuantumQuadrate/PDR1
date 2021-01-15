@@ -3,5 +3,5 @@ import sys
 import time
 m = PDR1(2,'97100648')
 m.moverel(2,-100)
-print('test2')
+print('test')
 ##m.home()
