@@ -7,10 +7,10 @@ import time
 
 class PDR1:
     """Thorlabs PDR1 rotation stage class."""
-    def __init__(self,  ser_num):
+    def __init__(self,  ser_num, chan_str):
         """Set up and connect to device with serial number: ser_num"""
-        self.ser_num = ser_num
-        #self.chan_str='0'+str(chan_str)+'00'
+        self.ser_num = str(ser_num)
+        self.chan_str='0'+str(chan_str)+'00'
         self.ready = False
         self.connect()
         if not self.ready:
